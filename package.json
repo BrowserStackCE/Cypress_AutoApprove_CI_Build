@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "scripts": {
+    "percy:cypress": "percy exec -- cypress run",
+    "start:server": "serve -l 8000 .",
+    "test": "start-server-and-test start:server 8000 percy:cypress"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "todomvc-app-css": "^2.4.2"
+  },
+  "devDependencies": {
+    "@percy/cli": "^1.30.11",
+    "@percy/cypress": "^3.1.6",
+    "cypress": "^10.11.0",
+    "serve": "^14.0.1",
+    "start-server-and-test": "1.14.0"
+  }
+}
